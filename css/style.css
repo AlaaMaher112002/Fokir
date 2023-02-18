@@ -1,0 +1,510 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    height: 60px;
+}
+.navbar ul li a{
+    color: white !important;
+    transition: all;
+    transition-duration: 1s;
+}
+.navbar ul li a:hover{
+    color:rgb(255, 48, 91) !important;
+}
+
+#logo{
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 48, 91);
+}
+
+#home{
+    background-image: url(../img/slider-01.jpg);
+    background-size: 100% 100%;
+    height: 700px;
+    width: 100%;
+}
+.layer{
+    background-color: rgba(0, 0, 0,0.6);
+    height: 100%;
+    width: 100%;
+}
+h1{
+    color:rgb(255, 48, 91) ;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Alegreya';
+}
+.content h3::after {
+    content: '|';
+    animation-name: txt;  
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes txt {
+    0%{content:'D|';}
+    3%{content:'De|';}
+    6%{content:'Des|';}
+    9%{content:'Desi|';}
+    12%{content:'Desig|';}
+    16%{content:'Design|';}
+    20%{content:'Designe|';}
+    24%{content:'Designer|';}
+    28%{content:'Designe|';}
+    32%{content:'Design|';}
+    36%{content:'Desig|';}
+    40%{content:'Desi|';}
+    44%{content:'Des|';}
+    48%{content:'De|';}
+    52%{content:'D|';}
+    56%{content:'|';}
+    60%{content:'D|';}
+    65%{content:'De|';}
+    69%{content:'Dev|';}
+    74%{content:'Deve|';}
+    77%{content:'Devel|';}
+    80%{content:'Develo|';}
+    83%{content:'Develop|';}
+    86%{content:'Develope|';}
+    89%{content:'Developer|';}
+    92%{content:'Develop|';}
+    91%{content:'Develo|';}
+    94%{content:'Deve|';}
+    96%{content:'De|';}
+    98%{content:'D|';}
+    100%{content:'|';}
+    
+}
+
+#about .img{
+    background-image: url(../img/profile.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.img-hover{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all;
+    transition-duration: 1s;
+    background-color: rgba(48, 45, 45, 0.6);
+}
+#about .img:hover .img-hover{
+    opacity: 1;
+}
+span{
+    color: rgb(255, 48, 91);
+}
+#line{
+border-bottom: 1px dashed gray;
+}
+
+#about ul li{
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style: none;
+    display: flex;
+}
+#about ul li h4{
+font-size: 20px;
+}
+.btn{
+    background-color: rgb(255, 48, 91);
+    color: aliceblue;
+    transition: all;
+    transition-duration: 1s;
+    padding: 7px 15px;
+}
+.btn:hover{
+    background-color: rgb(97, 15, 31);
+    color: aliceblue;
+}
+#Services{
+    background-color: #F1F1F1;
+    width: 100%;
+    transition: all;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+#Services h3{
+    font-size: 23px;
+    font-weight: bold;
+}
+#Services h3::after{
+    content: '';
+    background-color: rgb(255, 48, 91);
+    width: 25%;
+    height: 7px;
+    top:20px;
+}
+
+#Services h2{
+ font-size: 45px;
+ font-weight: bold;
+ position: relative;
+}
+
+#Services h2::after{
+content: '';
+width: 300px;
+height: 5px;
+background-color: rgb(255, 48, 91);
+border-radius: 20px;
+position: absolute;
+top: 65;
+left:38% ;
+}
+
+.col-xl-3{
+    transition: all;
+    transition-duration: 1s;
+}
+.col-xl-3:hover{
+background-color: white;
+}
+
+#Services i{
+    font-size: 37px;
+    color: rgb(255, 48, 91);
+    margin-bottom: 20px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#Services i:hover{
+color: rgb(97, 15, 31);
+}
+
+#protofilio h2{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+   }
+   
+#protofilio h2::after{
+   content: '';
+   width: 320px;
+   height: 5px;
+   background-color: rgb(255, 48, 91);
+   border-radius: 20px;
+   position: absolute;
+   top: 65;
+   left:38% ;
+   }
+
+
+#protofilio ul li{
+ text-decoration: none;
+ list-style-type: none;
+ padding-left: 15px;
+font-size: 16px;
+transition: all;
+transition-duration: 1s;
+}
+#protofilio ul li:hover a{
+color: rgb(255, 48, 91);
+}   
+
+#protofilio{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.work-item{
+    position: relative;
+    transition: tranform 1s;
+    overflow: hidden;
+}
+img{
+    transition: all 1s;
+}  
+.work-item-layer{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.664);
+    transition: all;
+    transition-duration: 1s;
+}
+.work-item:hover img{
+transform: scale(1.2);
+}
+.work-item:hover .work-item-layer{
+    top:0;
+    }
+
+.counter{
+background-color: #F1F1F1;
+    }
+.counter h4{
+        font-size: 45px;
+    }
+    
+    
+    
+#c1::after{
+        content: "+10";
+        animation-name: num;
+        animation-duration: 2s;
+        animation-iteration-count: 10;
+    }
+    
+    @keyframes num {
+        10%{ content: "+520"; }
+        20%{ content: "+320"; }
+        30%{ content: "+400"; }
+        40%{ content: "920"; }
+        50%{ content: "+720"; }
+        60%{ content: "+820"; }
+        70%{ content: "+888"; }
+        80%{ content: "410"; }
+        90%{ content: "+550"; }
+        100%{ content: "220"; }
+    }
+    #c2::after{
+        content: "+420";
+        animation-name: num2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes num2 {
+        10%{ content: "+520"; }
+        20%{ content: "+620"; }
+        30%{ content: "+700"; }
+        40%{ content: "+920"; }
+        50%{ content: "+420"; }
+        60%{ content: "+820"; }
+        70%{ content: "+988"; }
+        80%{ content: "+610"; }
+        90%{ content: "+050"; }
+        100%{ content: "+220"; }
+    }
+    
+    
+    #c3::after{
+        content: "+650";
+        animation-name: string2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes string2 {
+        10%{ content: "+220"; }
+        20%{ content: "+330"; }
+        30%{ content: "+450"; }
+        40%{ content: "+520"; }
+        50%{ content: "+620"; }
+        60%{ content: "+820"; }
+        70%{ content: "+788"; }
+        80%{ content: "+410"; }
+        90%{ content: "+650"; }
+        100%{ content: "+920"; }
+    }
+    #c4::after{
+        content: "+820";
+        animation-name: number;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes number {
+        10%{ content: "+520"; }
+        20%{ content: "+420"; }
+        30%{ content: "+900"; }
+        40%{ content: "+320"; }
+        50%{ content: "+120"; }
+        60%{ content: "+920"; }
+        70%{ content: "+088"; }
+        80%{ content: "+610"; }
+        90%{ content: "+950"; }
+        100%{ content: "+120"; }
+    } 
+    
+.counter i{
+    font-size: 28px;
+    color: rgb(255, 48, 91);
+    transition: all;
+    transition-duration: 1s;
+} 
+
+#client{
+    background-color: #F8F9FA;
+}
+
+#client h2{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+   }
+   
+#client h2::after{
+   content: '';
+   width: 320px;
+   height: 5px;
+   background-color: rgb(255, 48, 91);
+   border-radius: 20px;
+   position: absolute;
+   top: 65;
+   left:38% ;
+   }
+
+
+
+.client-picure{
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #F8F9FA;
+}
+.client-picure img{
+width: 100%;
+height: 100%;
+}
+.client-icon{
+    color: rgb(255, 48, 91);
+    font-size: 55px;
+}
+
+.carousel-indicators button{
+background-color: rgb(255, 48, 91) !important;
+width: 10px !important;
+border: 1px solid transparent;
+border: radius 20% !important ;
+}
+.carousel-indicators button.active{
+width: 20px !important;
+    }
+
+#blog{
+        background-color: #F8F9FA; 
+    } 
+.card-body span{
+color:#E65F78;
+font-weight: bold;
+}    
+.card{
+    border-color: white !important;
+}  
+
+#blog h2{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+   }
+   
+#blog h2::after{
+   content: '';
+   width: 320px;
+   height: 5px;
+   background-color: rgb(255, 48, 91);
+   border-radius: 20px;
+   position: absolute;
+   top: 65;
+   left:38% ;
+   }
+.card {
+    overflow: hidden;
+   }
+
+.imgDiv{
+    height: 215px !important;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 1s;
+}
+.imgDiv:hover img{
+    transform: scale(1.2);
+    }
+
+
+
+
+
+.card img:hover{
+    transform: scale(1.2);
+    }
+
+.form-input input{
+    height: 53px !important;
+    transition: all;
+    transition-duration: 1s;
+}
+.form-input input:hover{
+    border: 2px solid #E65F78 !important;
+}
+.form-text-area{
+    height: 100px !important;
+    width: 100%;
+    border: 1px solid rgb(212, 208, 208) !important;
+    transition: all;
+    transition-duration: 1s;
+}
+.form-text-area:hover{
+    border: 2px solid #E65F78 !important;
+}
+
+.btn-contact{
+    position: relative;
+}
+.btn-contact button{
+    position: absolute;
+    right: 10px;
+color: aliceblue;
+background-color: #E65F78;
+padding: 18px 40px;
+font-weight: bold;
+border-radius: 5px ;
+border: 0px;
+transition: all;
+transition-duration: 0.7s;
+}
+.btn-contact button:hover{
+background-color: #79313e;
+}
+
+
+.social-media{
+    background-color: #212121;
+}
+.social-media p{
+font-size: 19;
+}
+
+.social-media-icon i{
+    border: 1px solid gray;
+    padding: 12px 15px;
+    margin-left: 10px ;
+    border-radius: 50%;
+    transition: all;
+    transition-duration: 0.7s;
+}
+.social-media-icon i:hover{
+color: #E65F78;
+border: 1px solid #E65F78;
+} 
+
+#contact h2{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+   }
+   
+#contact h2::after{
+   content: '';
+   width: 320px;
+   height: 5px;
+   background-color: rgb(255, 48, 91);
+   border-radius: 20px;
+   position: absolute;
+   top: 65;
+   left:38% ;
+   }
